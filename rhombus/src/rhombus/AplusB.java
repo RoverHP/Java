@@ -1,10 +1,11 @@
 package rhombus;
 
 public class AplusB implements InterfaceA, InterfaceB {
-    public void sayWord(String word) {
-    	InterfaceB.sayWord(word);
+	
+	@Override
+	public void sayWord(String word) { 
+		InterfaceA.super.sayWord(word);
+		InterfaceB.super.sayWord(word);
 	}
-
-
 
 }
