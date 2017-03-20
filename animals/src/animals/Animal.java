@@ -1,7 +1,7 @@
 package animals;
 
-interface Animal {
+public abstract class Animal {
 
-	void voice();
+	void voice(){};
 
 }

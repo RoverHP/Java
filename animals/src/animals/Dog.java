@@ -2,12 +2,13 @@ package animals;
 
 import org.springframework.stereotype.Component;
 
-@Component
-public class Dog implements Animal {
+@Component(value = "dog")
+public class Dog extends Animal {
 
 	public Dog() {
 	}
 
+	@Override
 	public void voice() {
 		System.out.println("woof");
 	}
